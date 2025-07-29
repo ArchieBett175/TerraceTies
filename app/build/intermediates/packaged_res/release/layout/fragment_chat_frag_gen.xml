@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chatFragGen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:id="@+id/topLL">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="GENERAL CHAT"
+                android:textSize="40dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/messageBox"
+                android:background="@drawable/chat_box"
+                android:elevation="10dp">
+
+                <EditText
+                    android:id="@+id/editTextTextMultiLine"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:inputType="text"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="50dp"
+                    android:id="@+id/sendBut"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/baseline_send_24"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/style_grey"
+            android:layout_marginTop="10dp"
+            android:elevation="5dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/chatRecyclerView"
+                    android:layout_marginTop="12dp">
+
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

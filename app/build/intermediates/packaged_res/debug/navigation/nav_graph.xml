@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loading">
+
+    <fragment
+        android:id="@+id/homePage"
+        android:name="com.example.terraceties.homePage"
+        android:label="fragment_home_page"
+        tools:layout="@layout/fragment_home_page" />
+    <fragment
+        android:id="@+id/club_form_page"
+        android:name="com.example.terraceties.club_form_page"
+        android:label="fragment_club_form_page"
+        tools:layout="@layout/fragment_club_form_page" />
+    <fragment
+        android:id="@+id/results_page"
+        android:name="com.example.terraceties.results_page"
+        android:label="results_page" />
+    <fragment
+        android:id="@+id/stad_quest2"
+        android:name="com.example.terraceties.stad_quest"
+        android:label="fragment_stad_quest"
+        tools:layout="@layout/fragment_stad_quest" />
+    <fragment
+        android:id="@+id/profilePage"
+        android:name="com.example.terraceties.profilePage"
+        android:label="fragment_profile_page"
+        tools:layout="@layout/fragment_profile_page" />
+    <fragment
+        android:id="@+id/settingsPage"
+        android:name="com.example.terraceties.settingsPage"
+        android:label="fragment_settings_page"
+        tools:layout="@layout/fragment_settings_page" />
+    <fragment
+        android:id="@+id/loading"
+        android:name="com.example.terraceties.Loading"
+        android:label="fragment_loading"
+        tools:layout="@layout/fragment_loading" />
+    <fragment
+        android:id="@+id/league_info"
+        android:name="com.example.terraceties.league_info"
+        android:label="fragment_league_info"
+        tools:layout="@layout/fragment_league_info" />
+    <fragment
+        android:id="@+id/speakUp"
+        android:name="com.example.terraceties.speakUp"
+        android:label="fragment_speak_up"
+        tools:layout="@layout/fragment_speak_up" />
+</navigation>

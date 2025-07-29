@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".settingsPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#DDDDDD">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="70dp"
+                android:id="@+id/settBackButton"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:background="@drawable/back_button"
+                android:fontFamily="@font/mulish_extra_bold"
+                android:text="back"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mulish_extra_bold"
+                android:text="SETTINGS PAGE"
+                android:textSize="30dp"
+                android:textAlignment="center"
+                android:layout_marginVertical="10dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingBottom="25dp">
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:elevation="10dp"
+                android:background="@color/style_grey"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SELECTED TEAM:"
+                    android:fontFamily="@font/mulish_extra_bold"
+                    android:textSize="25dp" />
+
+                <Spinner
+                    android:id="@+id/teamSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:elevation="10dp"
+                android:background="@color/style_grey"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:id="@+id/nameBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NAME"
+                    android:fontFamily="@font/mulish_extra_bold"
+                    android:textSize="25dp"/>
+
+                <EditText
+                    android:id="@+id/userNameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:hint="Enter new user name"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:elevation="10dp"
+                android:background="@color/style_grey"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TEAM COLOURS"
+                    android:fontFamily="@font/mulish_extra_bold"
+                    android:textSize="25dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OFF"/>
+
+                    <Switch
+                        android:id="@+id/teamColSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:splitTrack="true"
+                        android:textOff="OFF"
+                        android:textOn="ON"
+                        android:layout_marginLeft="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ON"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:elevation="10dp"
+                android:background="@color/style_grey"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="All NOTIFICATIONS"
+                    android:fontFamily="@font/mulish_extra_bold"
+                    android:textSize="25dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OFF"/>
+
+                    <Switch
+                        android:id="@+id/notiSwitch1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:splitTrack="true"
+                        android:textOff="OFF"
+                        android:textOn="ON"
+                        android:layout_marginLeft="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ON"/>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MESSEGE NOTIFICATIONS"
+                    android:fontFamily="@font/mulish_extra_bold"
+                    android:textSize="25dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OFF"/>
+
+                    <Switch
+                        android:id="@+id/notiSwitch2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:splitTrack="true"
+                        android:textOff="OFF"
+                        android:textOn="ON"
+                        android:layout_marginLeft="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ON"/>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GAMEDAY NOTIFICATIONS"
+                    android:fontFamily="@font/mulish_extra_bold"
+                    android:textSize="25dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OFF"/>
+
+                    <Switch
+                        android:id="@+id/notiSwitch3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:splitTrack="true"
+                        android:textOff="OFF"
+                        android:textOn="ON"
+                        android:layout_marginLeft="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ON"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_marginBottom="20dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/settingsSave"
+                android:text="SAVE PREFRENCES"
+                android:textSize="15dp"
+                android:layout_marginHorizontal="5dp"
+                android:fontFamily="@font/mulish_extra_bold"
+                android:padding="10dp"
+                android:background="@color/darker_grey"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/reset"
+                android:text="RESET"
+                android:textSize="15dp"
+                android:layout_marginHorizontal="5dp"
+                android:fontFamily="@font/mulish_extra_bold"
+                android:padding="10dp"
+                android:background="@color/darker_grey"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

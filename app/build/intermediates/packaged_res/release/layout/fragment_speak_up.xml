@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".speakUp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#DDDDDD">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="70dp"
+                android:id="@+id/speakUpBackButton"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:background="@drawable/back_button"
+                android:fontFamily="@font/mulish_extra_bold"
+                android:text="back"
+                android:textColor="@color/white" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/mulish_extra_bold"
+                        android:text="SPEAK UP"
+                        android:textSize="30dp"
+                        android:layout_marginVertical="10dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginVertical="25dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="REPORT TO US"
+                android:textSize="30dp"
+                android:textAlignment="center"
+                android:fontFamily="@font/mulish_extra_bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Like to report an issue with the app, another user, or even something else enter the details below:"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:fontFamily="@font/mulish_semi_bold"/>
+
+            <EditText
+                android:id="@+id/userInput"
+                android:paddingTop="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:layout_marginHorizontal="10dp"
+                android:ems="10"
+                android:hint="Please provide all details, username etc...."/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="48dp"
+                android:id="@+id/sendButton"
+                android:layout_height="48dp"
+                android:background="@drawable/baseline_send_24"/>
+
+
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginVertical="30dp"
+                android:padding="10dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="175dp"
+                    android:layout_height="175dp"
+                    android:text="Get Help"
+                    android:id="@+id/gethelpButton"
+                    android:background="@drawable/back_button"
+                    android:fontFamily="@font/mulish_extra_bold"
+                    android:textColor="@color/white"
+                    android:layout_marginHorizontal="10dp"
+                    android:textSize="23dp"
+                    android:padding="5dp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="175dp"
+                    android:layout_height="175dp"
+                    android:text="Samaritans"
+                    android:id="@+id/samsButton"
+                    android:background="@drawable/back_button"
+                    android:fontFamily="@font/mulish_extra_bold"
+                    android:textColor="@color/white"
+                    android:layout_marginHorizontal="10dp"
+                    android:textSize="23dp"
+                    android:padding="5dp"/>
+            </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
