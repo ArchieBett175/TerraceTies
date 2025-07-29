@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homePage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/CaribbeanCurrent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/CaribbeanCurrent"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/tt_no_back_no_txt" />
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:src="@drawable/tt_text_no_back"
+                    />
+
+        </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:elevation="5dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="@color/PapayaWhip"
+            android:outlineSpotShadowColor="@color/black">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:background="@color/PapayaWhip">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="20dp"
+                android:layout_marginHorizontal="5dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/profileButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:background="@color/RichBlack"
+                    android:fontFamily="@font/mulish_extra_bold"
+                    android:paddingVertical="10dp"
+                    android:paddingHorizontal="25dp"
+                    android:text="Profile"
+                    android:textColor="@color/white"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="20dp"
+                android:layout_marginHorizontal="5dp">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/speakUP"
+                    android:background="@color/RichBlack"
+                    android:text="SPEAK UP"
+                    android:fontFamily="@font/mulish_extra_bold"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:paddingVertical="10dp"
+                    android:paddingHorizontal="20dp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="20dp"
+                android:layout_marginHorizontal="5dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/leagueInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:background="@color/RichBlack"
+                    android:fontFamily="@font/mulish_extra_bold"
+                    android:padding="10dp"
+                    android:text="LEAGUE INFO"
+                    android:textColor="@color/white"/>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <HorizontalScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layoutDirection="ltr">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_marginLeft="15dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp"
+                android:padding="10dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/fixtureButton"
+                android:layout_width="365dp"
+                android:layout_height="120dp"
+                android:background="@color/PapayaWhip"
+                android:fontFamily="@font/mulish_semi_bold"
+                android:text="fixtures"
+                android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fixtures | Press For More"
+                    android:fontFamily="@font/mulish_extra_bold"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:elevation="11dp"
+                    android:layout_gravity="center|top"
+                    android:layout_marginBottom="5dp"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="8dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp"
+                android:padding="10dp">
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/resultButton"
+                    android:layout_width="365dp"
+                    android:layout_height="120dp"
+                    android:background="@color/PapayaWhip"
+                    android:fontFamily="@font/mulish_semi_bold"
+                    android:text="Results"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Results | Press For More"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/mulish_extra_bold"
+                    android:textColor="@color/black"
+                    android:elevation="11dp"
+                    android:layout_gravity="center|top"
+                    android:layout_marginBottom="5dp"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/PapayaWhip"
+                app:cardCornerRadius="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginHorizontal="5dp"
+                android:outlineSpotShadowColor="@color/pumpkin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|center">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:layout_marginVertical="15dp"
+                    app:cardCornerRadius="35dp"
+                    android:elevation="10dp"
+                    android:layout_marginHorizontal="5dp">
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/stad_quest"
+                        android:layout_width="188dp"
+                        android:layout_height="100dp"
+                        android:fontFamily="@font/mulish_extra_bold"
+                        android:text="Stadium Quest"
+                        android:background="@color/RichBlack"
+                        android:textColor="@color/white"
+                        android:textSize="35dp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:layout_marginVertical="15dp"
+                    app:cardCornerRadius="35dp"
+                    android:elevation="10dp"
+                    android:layout_marginHorizontal="5dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/messengerButton"
+                    android:layout_width="188dp"
+                    android:layout_height="100dp"
+                    android:background="@color/RichBlack"
+                    android:fontFamily="@font/mulish_extra_bold"
+                    android:text="CHAT"
+                    android:textColor="@color/white"
+                    android:textSize="35dp" />
+                </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:layout_marginHorizontal="5dp"
+                android:elevation="1dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="10dp"
+                android:backgroundTint="@color/CaribbeanCurrent">
+
+                <fragment
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:id="@+id/map"
+                    android:layout_marginBottom="100dp"
+                    class="com.google.android.gms.maps.SupportMapFragment"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.slidingpanelayout.widget.SlidingPaneLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+
+
+</RelativeLayout>

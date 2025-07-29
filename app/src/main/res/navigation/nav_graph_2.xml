@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_2"
+    app:startDestination="@id/chatFragHome">
+
+    <fragment
+        android:id="@+id/chatFragHome"
+        android:name="com.example.terraceties.chatFragHome"
+        android:label="fragment_chat_frag_home"
+        tools:layout="@layout/fragment_chat_frag_home" />
+    <fragment
+        android:id="@+id/chatFragGen"
+        android:name="com.example.terraceties.chatFragGen"
+        android:label="fragment_chat_frag_gen"
+        tools:layout="@layout/fragment_chat_frag_gen" />
+    <fragment
+        android:id="@+id/chatFragLastGame"
+        android:name="com.example.terraceties.chatFragLastGame"
+        android:label="fragment_chat_frag_last_game"
+        tools:layout="@layout/fragment_chat_frag_last_game" />
+    <fragment
+        android:id="@+id/chatFragNextGame"
+        android:name="com.example.terraceties.chatFragNextGame"
+        android:label="fragment_chat_frag_next_game"
+        tools:layout="@layout/fragment_chat_frag_next_game" />
+    <fragment
+        android:id="@+id/chatFragLeague"
+        android:name="com.example.terraceties.chatFragLeague"
+        android:label="fragment_chat_frag_league"
+        tools:layout="@layout/fragment_chat_frag_league" />
+    <fragment
+        android:id="@+id/chatFragCup"
+        android:name="com.example.terraceties.chatFragCup"
+        android:label="fragment_chat_frag_cup"
+        tools:layout="@layout/fragment_chat_frag_cup" />
+</navigation>
