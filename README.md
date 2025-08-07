@@ -252,9 +252,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Archie Bett**
 - *Creative Problem-solver with a passion for innovation*
-- Email: [your.email@example.com](mailto:archiebett@hotmail.co.uk)
-- LinkedIn: [your-linkedin-profile](https://www.linkedin.com/in/archie-bett-/)
-- Portfolio: [your-portfolio-website](https://archiebettportfolio.vercel.app/)
+- Email: [archiebett@hotmail.co.uk](mailto:archiebett@hotmail.co.uk)
+- LinkedIn: [Archie Bett](https://www.linkedin.com/in/archie-bett-/)
+- Portfolio: [My Site](https://archiebettportfolio.vercel.app/)
 
 ## 🙏 Acknowledgments
 
